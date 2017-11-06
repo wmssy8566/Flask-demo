@@ -3,6 +3,9 @@ from flask.ext.bootstrap import Bootstrap
 from flask.ext.moment import Moment
 from datetime import datetime
 
+"""
+Flask猎狗书学习
+"""
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
