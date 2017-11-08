@@ -39,6 +39,14 @@
 {#    定义content内容     #}
 {% block content %}
 <div class="container">
+    {#    定义flash消息内容     #}
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
+
     {% block page_content %}{% endblock %}
 </div>
 {% endblock %}
